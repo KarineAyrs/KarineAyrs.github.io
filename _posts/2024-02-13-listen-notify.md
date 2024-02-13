@@ -1,10 +1,11 @@
 ---
 title: Механизм LISTEN/NOTIFY в Postgres. Его реализация и поддержка в Golang
 date: 2024-02-13 21:54:00 +0300
-categories: [Postgres, Golang]
-tags: [programming]
+categories: [Программирование]
+tags: [golang, postgres]
 author: karine_ayrs
 pin: true
+toc: true
 ---
 
 БД Postgres поддерживает механизм [LISTEN](https://www.postgresql.org/docs/current/sql-listen.html) и [NOTIFY](https://www.postgresql.org/docs/current/sql-notify.html), позволяющий отправлять асинхронные уведомления через соединение с базой. Сегодня мы рассмотрим на примере, 
@@ -29,6 +30,8 @@ pin: true
 {: .prompt-warning }
 
 # LISTEN 
+Более подробно о команде можно почитать в [официальной документации](https://www.postgresql.org/docs/current/sql-listen.html), а здесь перечислим основные моменты.
+
 `LISTEN channel`
 - `LISTEN` регистрирует текущую сессию как слушателя канала уведомлений `channel` . Если сессия уже зарегистрирована, то ничего не происходит
 - как только срабатывает команда `NOTIFY channel` в текущей сессии или другой, подключенной к одной и той же базе данных, все сессии слушающие на данный момент этот канал уведомлений уведомляются и каждая, в свою очередь уведомит подключенное клиентское приложение
