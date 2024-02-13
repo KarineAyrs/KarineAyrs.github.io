@@ -14,7 +14,7 @@ timezone: Europe/Moscow
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Техноблог # the main title
+title: ТехноБлог # the main title
 
 tagline: Заметки разработчика # it will display as the sub-title
 
