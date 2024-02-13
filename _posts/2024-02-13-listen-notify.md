@@ -1,8 +1,8 @@
 ---
 title: Механизм LISTEN/NOTIFY в Postgres. Его реализация и поддержка в Golang
-date: 2024-02-13 21:54:00
+date: 2024-02-13 21:54:00 +0300
 categories: [Postgres, Golang]
-tags: [программирование]
+tags: [programming]
 author: karine_ayrs
 pin: true
 ---
