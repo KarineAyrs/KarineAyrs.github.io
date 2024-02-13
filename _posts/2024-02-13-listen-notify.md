@@ -6,6 +6,7 @@ tags: [golang, postgres]
 author: karine_ayrs
 pin: true
 toc: false
+image: assets/img/avatar/logo.jpg
 ---
 
 БД Postgres поддерживает механизм [LISTEN](https://www.postgresql.org/docs/current/sql-listen.html) и [NOTIFY](https://www.postgresql.org/docs/current/sql-notify.html), позволяющий отправлять асинхронные уведомления через соединение с базой. Сегодня мы рассмотрим на примере, 
