@@ -10,3 +10,5 @@ order: 4
 ⭐ Здесь я буду размещать мини-статьи на интересные для меня темы, чтобы лучше в них разобраться или в качестве архива своих исследований. Буду рада, если и для вас они окажутся полезными.
 
 ### Мои контакты
+[<img src="/assets/img/linkedin_logo.png" width="42px">](https://www.linkedin.com/in/karineayrs) 
+[<img src="/assets/img/mail_logo.png" width="35px">](mailto:karine.ayrps@gmail.com) 
