@@ -200,6 +200,7 @@ exclude:
   - _posts/2019-08-08-text-and-typography.md
   - _posts/2019-08-08-write-a-new-post.md
   - _posts/2019-08-11-customize-the-favicon.md
+  - _posts/2019-08-09-getting-started.md
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
