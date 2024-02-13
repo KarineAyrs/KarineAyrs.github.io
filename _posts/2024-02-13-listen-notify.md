@@ -5,12 +5,17 @@ categories: [Программирование]
 tags: [golang, postgres]
 author: karine_ayrs
 pin: true
+toc: false
 ---
 
 БД Postgres поддерживает механизм [LISTEN](https://www.postgresql.org/docs/current/sql-listen.html) и [NOTIFY](https://www.postgresql.org/docs/current/sql-notify.html), позволяющий отправлять асинхронные уведомления через соединение с базой. Сегодня мы рассмотрим на примере, 
 как можно его применить и имплементировать в Golang. 
 
-## Notify
+#### Содержание
+- [NOTIFY](#notify)
+- [LISTEN](#listen)
+
+## NOTIFY
 
   Более подробно о команде можно почитать в [официальной документации](https://www.postgresql.org/docs/current/sql-notify.html), а здесь перечислим основные моменты.
 
@@ -28,7 +33,7 @@ pin: true
 > Нужно следить за переполнением внутренней очереди сообщений - ее размер 8GB (можно настроить). Если она заполнится, то `NOTIFY` не сможет запушить сообщения. При достижении 4GB придет предупреждение
 {: .prompt-warning }
 
-## Listen 
+## LISTEN 
 Более подробно о команде можно почитать в [официальной документации](https://www.postgresql.org/docs/current/sql-listen.html), а здесь перечислим основные моменты.
 
 `LISTEN channel`
