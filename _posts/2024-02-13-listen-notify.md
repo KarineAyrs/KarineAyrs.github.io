@@ -16,6 +16,7 @@ image: assets/img/pg-go-handshake.png
 - [NOTIFY](#notify)
 - [LISTEN](#listen)
 - [LISTEN/NOTIFY  на стороне БД](#работа-на-стороне-бд)
+- [LISTEN/NOTIFY  на стороне Golang](#работа-на-стороне-golang)
 
 ## NOTIFY
 
