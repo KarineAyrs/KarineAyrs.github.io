@@ -51,14 +51,15 @@ image: assets/img/pg-go-handshake.png
 create table users(
   id text not null,
   first_name text not null,
-  last_name text not null
+  last_name text not null,
+  unique(id)
 );
 ```
 🌟 Допустим, мы хотим отправлять нотификации при любых изменениях данных в таблице (операции `INSERT`, `UPDATE`, `DELETE`). <br>
 ⚡ Создадим триггер на изменение, добавление, удаление данных и для каждой строки будем отправлять нотификацию в
 канал `users` c помощью функции `pg_notify()`
 ```sql
-CREATE TRIGGER subscriptions_notify
+CREATE TRIGGER users_notify
     AFTER INSERT OR UPDATE OR DELETE
     ON users
     FOR EACH ROW
