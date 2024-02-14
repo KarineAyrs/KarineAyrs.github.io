@@ -282,7 +282,7 @@ insert into users(id, first_name, last_name) values ('1', 'John', 'Doe');
 ```
 connected to postgres
 2024/02/14 22:56:54 listening for notifications in repo
-got notification from DB, channel: usersnotification in repo {"timestamp" : "2024-02-14T19:57:46.67918+00:00", "action" : "insert", "db_schema" : "public", "table" : "users", "record" : {"id":"1","first_name":"John","last_name":"Doe"}, "old" : null}
+got notification from DB, channel: users notification in repo {"timestamp" : "2024-02-14T19:57:46.67918+00:00", "action" : "insert", "db_schema" : "public", "table" : "users", "record" : {"id":"1","first_name":"John","last_name":"Doe"}, "old" : null}
 ```
 
 🏆 Ура! Видим, что пришло уведомление о том, что в таблицу `users` была добавлена запись `{"id":"1","first_name":"John","last_name":"Doe"}`. Остальные операции (`update`, `delete`) предлагается 
