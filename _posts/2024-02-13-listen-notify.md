@@ -15,6 +15,7 @@ image: assets/img/pg-go-handshake.png
 #### Содержание
 - [NOTIFY](#notify)
 - [LISTEN](#listen)
+- [LISTEN/NOTIFY  на стороне БД](#работа-на-стороне-бд)
 
 ## NOTIFY
 
@@ -42,4 +43,50 @@ image: assets/img/pg-go-handshake.png
 - как только срабатывает команда `NOTIFY channel` в текущей сессии или другой, подключенной к одной и той же базе данных, все сессии слушающие на данный момент этот канал уведомлений уведомляются и каждая, в свою очередь уведомит подключенное клиентское приложение
 - сессию можно разрегистрировать с помощью команды `UNLISTEN` - регистрации автоматически очищаются когда сессия заканчивается
 - метод в клиентском приложении для поддержки механизма событий (уведомлений) - зависит от драйвера
+
+## Работа на стороне БД 
+Создадим таблицу `users` 
+
+```sql
+create table users(
+  id text not null,
+  first_name text not null,
+  last_name text not null
+);
+```
+🌟 Допустим, мы хотим отправлять нотификации при любых изменениях данных в таблице (операции `INSERT`, `UPDATE`, `DELETE`). <br>
+⚡ Создадим триггер на изменение, добавление, удаление данных и для каждой строки будем отправлять нотификацию в
+канал `users` c помощью функции `pg_notify()`
+```sql
+CREATE TRIGGER subscriptions_notify
+    AFTER INSERT OR UPDATE OR DELETE
+    ON users
+    FOR EACH ROW
+EXECUTE PROCEDURE notify_trigger();
+
+CREATE OR REPLACE FUNCTION notify_trigger() RETURNS trigger AS
+$trigger$
+DECLARE
+    rec     users;
+    dat     users;
+    payload TEXT;
+BEGIN
+    CASE TG_OP
+        WHEN 'UPDATE' THEN rec := NEW;
+                           dat := OLD;
+        WHEN 'INSERT' THEN rec := NEW;
+        WHEN 'DELETE' THEN rec := OLD;
+        ELSE RAISE EXCEPTION 'Unknown TG_OP: "%". Should not occur!', TG_OP;
+        END CASE;
+    payload := json_build_object('timestamp', CURRENT_TIMESTAMP, 'action', LOWER(TG_OP), 'db_schema', TG_TABLE_SCHEMA,
+                                 'table', TG_TABLE_NAME, 'record', row_to_json(rec), 'old', row_to_json(dat));
+
+    PERFORM pg_notify('users', payload);
+    RETURN rec;
+END;
+$trigger$ LANGUAGE 'plpgsql';
+
+```
+
+//TODO add GOLANG code
 
