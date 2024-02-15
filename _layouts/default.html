@@ -15,7 +15,7 @@ layout: compress
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
-
+  {% seo %}
   <body>
     {% include sidebar.html lang=lang %}
 
@@ -85,3 +85,4 @@ layout: compress
     {% include_cached search-loader.html %}
   </body>
 </html>
+

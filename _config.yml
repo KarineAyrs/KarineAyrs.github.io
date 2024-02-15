@@ -130,7 +130,7 @@ baseurl: ""
 
 plugins:
   - jekyll-include-cache
-
+  - jekyll-seo-tag
 
 # ------------ The following options are not recommended to be modified ------------------
 
