@@ -131,6 +131,7 @@ baseurl: ""
 plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-feed
 
 # ------------ The following options are not recommended to be modified ------------------
 
