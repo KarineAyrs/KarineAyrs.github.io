@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+<rss version="2.0" xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru">
+	<channel>
+		<title>LISTEN/NOTIFY в Postgres. Его реализация и поддержка в Golang | ТехноБлог</title>
+		<link><![CDATA[https://karineayrs.github.io]]></link>
+		<description>механизм listen notify в postgres реализация в golang, listen notify в go, listen notify in go, listen notify in golang</description>
+		<language>ru</language>
+		<pubDate>Sat, 20 Apr 2024 11:44:44 +0000</pubDate>
+		<generator>MySitemapGenerator (www.mysitemapgenerator.com)</generator>
+
+		<item turbo="true">
+			<guid isPermaLink="false">2395183684</guid>
+			<title>Categories</title>
+			<link>https://karineayrs.github.io/categories/</link>
+			<author>Администратор</author>
+			<category>Новости сайта</category>
+			<description>Блог про разработку/golang, go, ML, DS</description>
+			<turbo:content><![CDATA[<header>	<h1>Categories</h1></header><p><img src="https://mc.yandex.ru/watch/96480631"></p>]]></turbo:content>
+			<pubDate>Sat, 20 Apr 2024 14:30:14 +0300</pubDate>
+		</item>
+		<item turbo="true">
+			<guid isPermaLink="false">2029130821</guid>
+			<title>Archives</title>
+			<link>https://karineayrs.github.io/archives/</link>
+			<author>Администратор</author>
+			<category>Новости сайта</category>
+			<description>Блог про разработку/golang, go, ML, DS</description>
+			<turbo:content><![CDATA[<header>	<h1>Archives</h1></header><p><img src="https://mc.yandex.ru/watch/96480631"></p>]]></turbo:content>
+			<pubDate>Sat, 20 Apr 2024 14:30:14 +0300</pubDate>
+		</item>
+		<item turbo="true">
+			<guid isPermaLink="false">3952615612</guid>
+			<title>About</title>
+			<link>https://karineayrs.github.io/about/</link>
+			<author>Администратор</author>
+			<category>Новости сайта</category>
+			<description>Обо мне Всем привет! Меня зовут Каринэ, я Go-разработчик в ViasatTech и аналитик в НИФИ, также учусь в аспирантуре в МГУ.</description>
+			<turbo:content><![CDATA[<header>	<h1>About</h1></header><h2>Обо мне <a href="https://karineayrs.github.io/"></a></h2><p>Всем привет! Меня зовут Каринэ, я Go-разработчик в <a href="https://viasat.ru/">ViasatTech</a> и аналитик в <a href="https://www.nifi.ru/ru/">НИФИ</a>, также учусь в аспирантуре в МГУ.</p><h2>Зачем всё это? <a href="https://karineayrs.github.io/"></a></h2><p>Здесь я буду размещать мини-статьи на интересные для меня темы, чтобы лучше в них разобраться или в качестве архива своих исследований. Буду рада, если и для вас они окажутся полезными.</p>]]></turbo:content>
+			<pubDate>Sat, 20 Apr 2024 14:44:41 +0300</pubDate>
+		</item>
+		<item turbo="true">
+			<guid isPermaLink="false">3151288766</guid>
+			<title>Tags</title>
+			<link>https://karineayrs.github.io/tags/</link>
+			<author>Администратор</author>
+			<category>Новости сайта</category>
+			<description>Блог про разработку/golang, go, ML, DS</description>
+			<turbo:content><![CDATA[<header>	<h1>Tags</h1></header><p><img src="https://mc.yandex.ru/watch/96480631"></p>]]></turbo:content>
+			<pubDate>Sat, 20 Apr 2024 14:30:14 +0300</pubDate>
+		</item>
+	</channel>
+</rss>
