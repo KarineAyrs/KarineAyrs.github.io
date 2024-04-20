@@ -13,9 +13,7 @@ layout: null
             <item turbo="true">
                 <title>{{ post.title | xml_escape }}</title>
                 <author>karine.ayrps@gmail.com (Karine Ayrapetyants)</author>
-                <description><turbo:content><![CDATA[
-                         {{ post.content | xml_escape }}
-                    ]]></turbo:content></description>
+                <turbo:content><![CDATA[{{ post.content }}]]></turbo:content>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
                 <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
