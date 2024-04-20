@@ -12,7 +12,7 @@ layout: null
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <generator>Jekyll v{{ jekyll.version }}</generator>
         {% for post in site.tags["postgres", "golang"] %}
-            <item>
+            <item turbo="true">
                 <title>{{ post.title | xml_escape }}</title>
                 <author>karine.ayrps@gmail.com (Karine Ayrapetyants)</author>
                 <description>{{ post.content | xml_escape }}</description>
