@@ -1,5 +1,6 @@
 https://karineayrs.github.io/
 https://karineayrs.github.io/posts/listen-notify/
+https://karineayrs.github.io/posts/join-strategies/
 https://karineayrs.github.io/categories/
 https://karineayrs.github.io/tags/
 https://karineayrs.github.io/archives/
