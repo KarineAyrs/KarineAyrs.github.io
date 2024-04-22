@@ -1,5 +1,5 @@
 ---
-title: JOIN стратегии в Postgres. 
+title: JOIN стратегии в Postgres
 tagline: Postgres под капотом - стратегии объединения таблиц.
 date: 2024-04-12 17:13:00 +0300
 categories: [Программирование]
