@@ -7,7 +7,7 @@ tags: [postgres]
 author: karine_ayrs
 pin: true
 toc: false
-image: assets/img/pg-go-handshake.png
+image: assets/img/join.jpeg
 description: join in postgres, nested loop, merge join, hashed join, join стратегии, стратегии объединения таблиц, как работает join, join изнутри, sql
 ---
 
